@@ -13,6 +13,6 @@ const user = {
 console.log(user);
 
 const dataShareConfirmation = confirm('Can i show my details?');
-console.log('dataShareConfirmation', dataShareConfirmation);
+console.log('dataShareConfirmation', dataShareConfirmation)
 
 dataShareConfirmation ? console.log(`User Name: ${user.name}, Surname: ${user.surname}, Age: ${user.age}, City: ${user.city}`) : alert('The user has refused to show his data');
