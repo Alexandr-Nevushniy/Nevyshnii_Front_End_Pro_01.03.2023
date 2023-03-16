@@ -1,40 +1,40 @@
-const oneNumber = parseInt(prompt("")) || parseInt("0");
-const twoNumber = parseInt(prompt("")) || parseInt("22");
-console.log('oneNumber', oneNumber, 'twoNumber', twoNumber);
+const firstNumber = parseInt(prompt("")) || parseInt("0");
+const secondNumber = parseInt(prompt("")) || parseInt("22");
+console.log('firstNumber', firstNumber, 'secondNumber', secondNumber);
 
-const threeNumber = oneNumber > 0 && twoNumber > 0 ? 80 : 40;
-console.log('threeNumber', threeNumber);
+const thirdNumber = firstNumber > 0 && secondNumber > 0 ? 80 : 40;
+console.log('thirdNumber', thirdNumber);
 
 
 const obj = {}
-if (oneNumber >= 90) {
+if (firstNumber >= 90) {
     obj.size = 'big'
-} else if (oneNumber <= 40) {
+} else if (firstNumber <= 40) {
     obj.size = 'small'
 } else {
     obj.size = 'medium'
 }
 console.log('obj', obj);
 
-let fourNumber;
+let fourthNumber;
 switch (obj.size) {
     case 'big':
-        fourNumber = 1000;
+        fourthNumber = 1000;
         break;
     case 'medium':
-        fourNumber = 100;
+        fourthNumber = 100;
         break;
     case 'small':
-        fourNumber = 10;
+        fourthNumber = 10;
         break;
 }
-console.log('fourNumber', fourNumber);
+console.log('fourthNumber', fourthNumber);
 
-const result = oneNumber * twoNumber * threeNumber * fourNumber;
+const result = firstNumber * secondNumber * thirdNumber * fourthNumber;
 if (result % 2 !== 0) {
     console.log('Number is 0')
-} else if (twoNumber > 50) {
-    alert(twoNumber)
+} else if (secondNumber > 50) {
+    alert(secondNumber)
 }
 
 
