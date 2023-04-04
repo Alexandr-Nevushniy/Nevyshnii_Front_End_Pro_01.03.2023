@@ -25,8 +25,8 @@ console.log(findFactorial(arr));
 
 let calculator = {
     read: function () {
-        this.a = parseFloat(prompt('',));
-        this.b = parseFloat(prompt('',));
+        this.a = parseFloat(prompt('0',));
+        this.b = parseFloat(prompt('0',));
     },
     sum: function () {
         return this.a + this.b;
