@@ -5,6 +5,18 @@ const array = [1, 2, 3, 4, 5, 6, 7];
 let removeElement = array.filter(item => item !== 5)
 console.log(removeElement)
 
+/*function removeElement(array, item) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === item) {
+            array.splice(i, 1);
+        }
+    }
+    return array;
+}
+
+const arr = [1, 2, 3, 4, 5];
+removeElement(arr, 3);
+console.log(arr);*/
 
 // Задание 2
 

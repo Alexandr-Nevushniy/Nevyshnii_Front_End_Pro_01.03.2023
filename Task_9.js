@@ -26,6 +26,16 @@ function newArray(array) {
 const uniqueArray = newArray(arr2);
 console.log(uniqueArray);
 
+function uniqueValues(arr) {
+    return arr.filter((value, index, array) => {
+        return array.indexOf(value) === index;
+    });
+}
+
+const arr3 = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
+const uniqueArr1 = uniqueValues(arr3);
+console.log(uniqueArr1);
+
 /*2) Напишите функцию которая принимает массив целых чисел
 и вернет число которое встречается чаще всего,
 если таких чисел несколько, результатом должно быть число
