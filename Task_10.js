@@ -66,9 +66,36 @@ document.write(helloList)
 
 
 
+/*function ezjQuery(tag) {
+    let stack = [{tag, content: ""}];
 
+    function add(newTag, newContent = "") {
+        stack.push({tag: newTag, content: newContent});
+        return this;
+    }
 
+    function render() {
+        let result = "";
+        stack.reverse().forEach(({tag, content}) => {
+            result = `<${tag}>${content}${result}</${tag}>`;
+        });
+        stack = [{tag, content: ""}];
+        return result;
+    }
 
+    return {add, render};
+}
 
+// example
 
+const helloList = ezjQuery('body')
+    .add('div')
+    .add('ul')
+    .add('li', 'Hello')
+    .render();
+console.log(helloList);
 
+const bodyDiv = ezjQuery('body')
+    .add('div')
+    .render();
+console.log(bodyDiv);*/
