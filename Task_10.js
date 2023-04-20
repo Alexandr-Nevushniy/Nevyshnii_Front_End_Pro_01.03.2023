@@ -3,7 +3,7 @@
 // Задание 1
 
 
-function solution(arr) {
+/*function solution(arr) {
     let emptyOdj = {};
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] in emptyOdj) {
@@ -25,13 +25,13 @@ console.log(solution([12, 23, 34, 12, 12, 23, 12, 45]));
 console.log(solution([4, 4, 100, 5000, 4, 4, 4, 4, 4, 100, 100]));
 console.log(solution([3, 3, 4, 6, 4, 5, 9, 9, 21, 9]));
 console.log(solution([4, 8, 15, 16, 23, 42, 4, 15, 42, 42]));
-console.log(solution([2, 2, 44, 44]));
+console.log(solution([2, 2, 44, 44]));*/
 
 
 // Задание 2
 
 
-function EzjQuery(tag) {
+/*function EzjQuery(tag) {
     this.html = `<${tag}></${tag}>`;
 
     this.add = function (tag, content) {
@@ -62,8 +62,7 @@ let bodyDiv = new EzjQuery('body')
     .render();
 console.log(bodyDiv);
 
-document.write(helloList)
-
+document.write(helloList)*/
 
 
 /*function ezjQuery(tag) {
@@ -86,8 +85,6 @@ document.write(helloList)
     return {add, render};
 }
 
-// example
-
 const helloList = ezjQuery('body')
     .add('div')
     .add('ul')
@@ -99,3 +96,35 @@ const bodyDiv = ezjQuery('body')
     .add('div')
     .render();
 console.log(bodyDiv);*/
+
+
+function AddHtml(name) {
+    if (name === undefined) {
+        this.a = '';
+        this.b = '';
+    } else {
+        this.a = `<${name}>`;
+        this.b = `</${name}>`;
+    }
+    this.html = this.a + this.b;
+
+    this.add = function (tag, str = '') {
+        this.a = this.a + `<${tag}>`;
+        this.b = `</${tag}>` + this.b;
+        this.c = str;
+        this.html = this.a + this.c + this.b;
+        return this;
+    };
+    this.render = function () {
+        let newHtml = this.html
+        this.a = `<${name}>`;
+        this.b = `</${name}>`;
+        return newHtml;
+    };
+}
+
+let obj = new AddHtml('body')
+    .add('div')
+    .add('div', 'hello')
+    .render()
+console.log(obj)
