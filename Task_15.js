@@ -118,6 +118,29 @@ getUsers('https://swapi.dev/api/people/');*/
 
 
 
+// Создаем текстовое поле и <div> элемент
+/*
+const input = document.createElement('input');
+input.setAttribute('type', 'text');
+input.setAttribute('id', 'my-input');
+document.body.appendChild(input);
+
+const div = document.createElement('div');
+div.setAttribute('id', 'my-div');
+div.style.display = 'none'; // Начальное состояние <div> - скрытое
+div.innerText = 'Это <div> элемент';
+document.body.appendChild(div);
+
+// Добавляем слушателей событий фокуса и потери фокуса на поле ввода
+input.addEventListener('focus', () => {
+    div.style.display = 'block';
+});
+
+input.addEventListener('blur', () => {
+    div.style.display = 'none';
+});
+*/
+
 
 
 
