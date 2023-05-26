@@ -10,7 +10,7 @@
 
 /*ДЗ 21. Реалізувати подобу інтернет-магазину.*/
 
-.wrapper {
+/*.wrapper {
     display: flex;
     justify-content: center;
     margin: 35px;
@@ -55,7 +55,52 @@
 .categories li a{
     text-decoration: none;
     color: black;
+}*/
+
+/*ДЗ 22. Слайдер базовий*/
+
+.slider-container {
+    position: relative;
+    width: 1500px;
+    margin: auto;
+    overflow: hidden;
 }
 
+button {
+    position: absolute;
+    top: 36%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #67a968;
+    border-radius: 1px;
+    /*border: none;*/
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 45%;
+}
+
+#nextBtn {
+    right: 45%;
+}
+
+img {
+    width: 1500px;
+    height: 800px;
+    transition: transform ease 0s;
+}
+
+img.active {
+    transform: translateX(0);
+}
+
+img.next {
+    transform: translateX(1500px);
+}
+
+img.prev {
+    transform: translateX(-1500px);
+}
 
 
