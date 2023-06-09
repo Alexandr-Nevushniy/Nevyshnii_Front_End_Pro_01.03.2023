@@ -31,3 +31,4 @@ nextBtn.addEventListener("click", () => {
 
 updateImages();
 
+
